@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;700&family=Teko:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Noto Serif", sans-serif;
+    background-color: #142850;
+}
+
+.form-login {
+    line-height: 250%;
+}
+
+.login-box {
+    background-color: white;
+    box-shadow: 3px 3px 2px 3px #696969;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.title {
+    font-size: 20pt;
+    margin-bottom: 0;
+    line-height: 25%;
+}
+
+.input-form {
+    font-size: 11pt;
+}
+
+p {
+    line-height: 150%;
+}
+
+.btn {
+    padding: 8px;
+    width: 210px;
+    background-color: #00A8CC;
+    border: 0;
+    font-family: "Noto Serif";
+    font-size: 11pt;
+    margin-top: 30px;
+}
+.btn:hover {
+    box-shadow: 2px 2px 2px 1px #d3d3d3;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.check-form {
+    text-align: justify;
+    line-height: 150%;
+}
