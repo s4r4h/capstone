@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+      };      
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>Teknik Listrik | 02. Sifat Beban R, L, dan C</title>
+    <link rel="stylesheet" href="../styles/course.css">
+    <script src="https://kit.fontawesome.com/de8de52639.js"></script>
+  </head>
+  <body>
+    <section class="one">
+      <div class="jumbotron">
+        <h1><a href="maincouse.html">Sifat Beban R, L, dan C</a></h1>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="dashboard">
+        <a href="index.html"><i class="fas fa-home" id="btn"></i></a>
+      </div>
+    <div class="sidebar">
+      <header>TEKNIK LISTRIK</header>
+      <ul class="module">
+        <li style="list-style:none;"><a href="01.html">01. Segitiga Daya, Sifat Isolator, dan Motor DC</a></li>
+        <li style="list-style:none;"><a href="02.html">02. Sifat Beban R, L, dan C</a></li>
+        <li style="list-style:none;"><a href="03.html">03. Perangkat Elektronika Daya</a></li>
+        <li style="list-style:none;"><a href="04.html">04. Arus, Tegangan, dan Resistansi</a></li>
+        <li style="list-style:none;"><a href="05.html">05. Hukum Ohm, Daya, dan Energi</a></li>
+      </ul>
+      </div>
+    </section>
+    <section class="two">
+      <h2>JENIS BEBAN LISTRIK</h2>
+      <p>Beban listrik adalah suatu alat atau benda yang dapat bekerja atau berfungsi apabila dialiri arus listrik yang berpotensial (dapat bekerja dengan memanfaatkan energi listrik). Contoh : lampu, alat-alat ramah tangga, alat-alat elektronik, selain itu alat-alat yang digunakan untuk merubah energi listrik menjadi energi lain misal gerak dan panas, dan lain sebagainya.</p>
+      <p>Untuk di ingat : <q>Beban listrik adalah alat yang dapat bekerja dengan memanfaatkan energi listrik.</q></p>
+      <p>Berdasarkan <strong>sifat</strong> suatu beban listrik dapat dibedakan menjadi 3 yaitu :</p>
+      <ol>
+        <strong><li>Resistif</li></strong>
+            <p>Beban yang memiliki sifat resistif akan memiliki sifat yang sama dengan resistor (R). Apabila beban tersebut dialiri arus listrik maka arus listrik yang mengalir melalui beban tersebut adalah arus nominal pada beban dan memiliki nilai yang tetap sehingga tidak diaktifkan. Contoh beban beban listrik yang bersifat resistif adalah lampu pijar (penerangan), setrika, teko listrik, dan alat-alat rumah tangga yang bersifat pemanas lainnya.</p>
+            <p>Resistor bersifat menghalangi aliran elektron yang melewatinya (dengan jalan menurunkan tegangan listrik yang mengalir), sehingga mengakibatkan terkonversinya energi listrik menjadi panas. Dengan sifat demikian, resistor tidak akan merubah sifat-sifat listrik AC yang mengalirinya. Gelombang arus dan tegangan listrik yang melewati resistor akan selalu bersamaan membentuk bukit dan lembah. Dengan kata lain, beban resistif tidak akan menggeser posisi gelombang arus maupun tegangan listrik AC.</p>
+            <img src="02.gb1.PNG" alt="grafik resistif">
+            <p><i>Untuk di ingat :</i></p>
+            <ul>
+                <li>Beban Resistif merupakan komponen yang hanya terdiri dari resistan (ohm)</li>
+                <li>Beban resistif hanya mengkonsumsi daya aktif sehingga faktor daya bernilai tetap</li>
+                <li>Bekerja dengan prinsip hambatan sehingga arus listrik akan terhambat dan dapat menyebabkan panas (Beban R akan menyebabkan Panas)</li>
+                <li>Tidak mempengaruhi gelombang Tegangan dan Arus sehingga gelombang akan tetap sefasa</li>
+            </ul>
+
+        <strong><li>Induktif</li></strong>
+            <p>Beban yang bersifat induktif memiliki sifat yang sama dengan induktor (L). Arus listrik yang mengalir melalui beban tersebut akan disimpan dalam bentuk medan magnet karena arus listrik yang mengalir akan terinduksi dan dirubah menjadi medan magnet sehingga dapat tersimpan. Misalnya motor listrik ketika digerakkan dengan cara dialiri arus listrik maka nilai arus start-nya akan 3 kali lebih besar dari arus nominal, dan ketika motor listrik telah runing maka nilai arus listrik akan sama dengan nilai arus nominal. Contoh beban listrik yang bersifat induktif adalah pompa air, blender, kipas angin dan alat-alat yang memanfaatkan energi listrik untuk menghasilkan energi gerak sebagai penggerak baban utama.</p>
+            <p>Beban induktif diciptakan oleh lilitan kawat (kumparan) yang terdapat di berbagai alat-alat listrik seperti motor, trafo, dan relay. Kumparan dibutuhkan oleh alat-alat listrik tersebut untuk menciptakan medan magnet sebagai komponen kerjanya. Pembangkitan medan magnet pada kumparan inilah yang menjadi beban induktif pada rangkaian arus listrik AC.</p>
+            <p>Beban untuk membangkitkan medan magnet putar pada stator motor induksi tersebut, tentu membutuhkan energi listrik khusus. Beban induktif pada motor induksi inilah yang ditanggung oleh daya reaktif sumber listrik AC. Sedangkan daya listrik yang dibutuhkan motor induksi tersebut untuk memutar beban yang terkopling pada porosnya, disebut dengan daya nyata. Jumlah resultan daya reaktif dan daya nyata disebut sebagai daya semu.</p>
+            <p>Kumparan memiliki sifat untuk menghalangi terjadinya perubahan nilai arus listrik. Seperti yang kita ketahui bersama bahwa listrik AC memiliki nilai arus yang naik turun membentuk gelombang sinusoidal. Perubahan arus listrik yang naik turun inilah yang dihalangi oleh komponen kumparan di dalam sebuah rangkaian listrik AC. Terhalangnya perubahan arus listrik ini mengakibatkan arus listrik menjadi tertinggal beberapa derajat oleh tegangan listrik pada grafik sinusoidal arus dan tegangan listrik AC.</p>
+            <img src="02.gb2.PNG" alt="grafik induktif">
+            <p><i>Untuk di ingat :</i></p>
+            <ul>
+                <li>Beban Induktif bekerja berdasarkan prinsip kerja induksi karena beban induktif berupa kumparan</li>
+                <li>Beban induktif menyerap daya aktif dan reaktif</li>
+                <li>Menghasilkan daya harmonik yang menyebabkan nilai $cos \pi < 1$</li>
+                <li>Kumparan menyebabkan terhambat laju arus sehingga gelombang arus tertinggal (lagging) dari gelombang tegangan</li>
+            </ul>
+
+        <strong><li>Kapasitif</li></strong>
+            <p>Beban yang bersifat kapasitif memiliki sifat yang sama dengan kapasitor (C). Hampir sama dengan induktor yang menyimpan energi listrik hanya saja, beban yang bersifat kapasitif menyimpan energi listrik murni. Pada industri-industri besar yang menggunakan penggerak berupa motor listrik memerlukan kapasitor untuk menghemat daya.</p>
+            <p>Beban kapasitif merupakan kebalikan dari beban induktif. Jika beban induktif menghalangi terjadinya perubahan nilai arus listrik AC, maka beban kapasitif bersifat menghalangi terjadinya perubahan nilai tegangan listrik. Sifat ini menunjukkan bahwa kapasitor bersifat seakan-akan menyimpan tegangan listrik sesaat.</p>
+            <img src="02.gb3.PNG" alt="grafik kapsitif">
+            <p>Gambar di atas adalah gelombang sinusoidal tegangan dan arus listrik AC pada beban kapasitor murni. Nampak jika kita plot daya listrik yang dibutuhkan untuk menanggung beban kapasitor juga berbentuk sinusoidal. Daya listrik bernilai positif (daya diserap kapasitor) pada setengah pertama gelombang sinusoidal daya, serta negatif (daya dikeluarkan kapasitor) pada setengah gelombang kedua.</p>
+            <p><i>Untuk di ingat :</i></p>
+            <ul>
+                <li>Beban kapasitif memiliki kemampuan kapasitansi yaitu menyimpan energi listrik dalam waktu sesaat</li>
+                <li>Beban kapasitif menyerap daya aktif dan membuang daya reaktif (Sebab mengapa kapasitor digunakan untuk memperbaiki $cos \pi$)</li>
+                <li>Beban kapasitif menghambat laju tegangan sehingga gelombang arus mendahului (leading) terhadap tegangan</li>
+                <li>Perbedaan mendasar antara beban L dan C yaitu beban L menyimpan energi listrik dalam bentuk medan magnet sedangkan beban C menyimpan energi listrik murni.</li>
+            </ul>
+    </ol>
+    <img src="02.gb4.PNG" alt="grafik gabungan">
+    <p>Gambaran gelombang arus dan tegangan dalam bentuk yang lebih sederhana dan agar mudah dipahami.</p>
+    <p><i>Untuk di ingat :</i></p>
+    <ul>
+        <li>Beban R untuk gelombang arus dan tegangan selalu beriringan (sefasa)</li>
+        <li>Beban L untuk gelombang arus tertinggal (lagging) dari gelombang tegangan</li>
+        <li>Beban C untuk gelombang tegangan tertinggal (lagging) dari gemlombang arus</li>
+    </ul>
+    </section>
+    <footer>
+      <a href="01.html" class="previous">&laquo; Previous</a>
+      <a href="03.html" class="next">Next &raquo;</a>
+  </footer>
+  </body>
+</html>

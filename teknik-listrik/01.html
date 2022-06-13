@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+      };      
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>Teknik Listrik | 01. Segitiga Daya, Sifat Isolator, dan Motor DC</title>
+    <link rel="stylesheet" href="../styles/course.css">
+    <script src="https://kit.fontawesome.com/de8de52639.js"></script>
+  </head>
+  <body>
+    <section class="one">
+      <div class="jumbotron">
+        <h1><a href="maincouse.html">Segitiga Daya, Sifat Isolator, dan Motor DC</a></h1>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="dashboard">
+        <i class="fas fa-home" id="btn"></i>
+      </div>
+    <div class="sidebar">
+      <header>TEKNIK LISTRIK</header>
+      <ul class="module">
+        <li style="list-style:none;"><a href="01.html">01. Segitiga Daya, Sifat Isolator, dan Motor DC</a></li>
+        <li style="list-style:none;"><a href="02.html">02. Sifat Beban R, L, dan C</a></li>
+        <li style="list-style:none;"><a href="03.html">03. Perangkat Elektronika Daya</a></li>
+        <li style="list-style:none;"><a href="04.html">04. Arus, Tegangan, dan Resistansi</a></li>
+        <li style="list-style:none;"><a href="05.html">05. Hukum Ohm, Daya, dan Energi</a></li>
+      </ul>
+      </div>
+    </section>
+    <section class="two">
+      <h2>SEGITIGA DAYA</h2>
+      <p>Dalam sistem listrik AC (arus bolak-balik) ada 3 jenis daya untuk beban yang memiliki Impedansi ($Z$), yaitu:</p>
+      <ul>
+        <li>Daya Semu ($S$), satuannya $VA$ (<i>Volt Ampere</i>)</li>
+            <p>Pada beban impedansi ($Z$), Daya semu adalah daya yang terukur atau terbaca pada alat ukur. Daya semu adalah penjumlahan daya aktif dan reaktif secara vektoris.</p>
+        <li>Daya Reaktif ($Q$), satuannya $VAR$ (<i>Volt Ampere Reaktif</i>)</li>
+            <p>Daya reaktif adalah daya yang timbul akibat adanya efek induksi elektromagnetik oleh beban yang mempunyai nilai induktif (fase arus tertinggal/laging) atau kapasitif (fase arus mendahului/leading).</p>
+        <li>Daya Aktif ($P$), satuannya $W$ (<i>Watt</i>)</li>
+            <p>Daya aktif disebut juga daya nyata yaitu daya yang dibutuhkan oleh beban.</p>
+      </ul>
+      <img src="gb1.PNG" alt="segitiga daya">
+      <p>Dari gambar diatas terlihat bahwa semakin besar nila daya reaktif ($Q$) akan meningkatkan sudut antara daya nyata dan daya semu atau biasa disebut dengan <i>power factor</i> ($cos \varphi$), sehingga daya yang terbaca pada alat ukur ($S$) lebih besar daripada daya yang sesungguhnya dibutuhkan oleh beban ($P$).</p>
+      <p>Dimana :</p>
+      <p>$S = V \times I (VA)$</p>
+      <p>$P = V \times I \times cos \varphi (W)$</p>
+      <p>$Q = V \times I \times sin \varphi (VAR)$</p>
+            
+      <p>*Catatan :</p>
+      <ul>
+        <li>Rumus di atas adalah rumus untuk sistem $1$ phasa, jika menggunakan sistem $3$ phasa maka rumus di atas dikalikan $1,73$ (nilai akar $3$)</li>
+        <li>Jika $cos \varphi$ besar maka nilai daya semu lebih besar dari nilai daya aktif ($S>P$)</li>
+      </ul>
+      <h2>SIFAT PENGHANTAR LISTRIK</h2>
+      <p>Pengertian penghantar listrik <q>Penghantar adalah bahan yang memiliki banyak elektron bebas pada kulit terluar orbit.</q></p>
+      <p>Sifat bahan penghantar :</p>
+      <ol>
+        <li><strong>Daya hantar listrik</strong></li>
+            <p>Arus yang mengalir dalam suatu penghantar selalu mengalami hambatan dari penghantar (memiliki nilai tahanan jenis)</p>
+        <li><strong>Koefisien temperatur hambatan</strong></li>
+            <p>Suatu bahan akan mengalami perubahan volume bila terjadi perubahan temperatur (memulai jika panas dan menyusut ketika dingin)</p>
+        <li><strong>Daya hantar panas</strong></li>
+            <p>Daya hantar panas menunjukan jumlah kalor yang melalui lapisan bahan dalam satuan waktu</p>
+        <li><strong>Daya tegangan tarik</strong></li>
+            <p>Daya tegangan tarik yang di maksud adalah sifat mekanis dari sebuah penghantar. (Penghantar padat contohnya logam, penghantar cair contohnya air raksa dan panghantar udara contohnya gas mulia (Neon))</p>
+        <li><strong>Daya elektro motoris-termo</strong></li>
+            <p>Sifat yang timbul akibat dua titik kontak yang terbuat dari dua bahan yang berlainan sehingga arus membangkitkan daya elektro motoris-termo jika terdapat perbedaan suhu.</p>
+      </ol>
+      <h2>JENIS-JENIS MOTOR DC</h2>
+      <q>Motor DC atau sering disebut juga dengan Motor listrik arus searah adalah suatu perangkat yang dapat mengubah energi listrik searah (Direct Current/DC) menjadi energi kinetik.</q>
+      <p>Motor DC diklasifikasikan menjadi 2 Jenis utama berdasarkan hubungan Kumparan Medan dan Kumparan Angkernya, kedua jenis Motor DC tersebut adalah Motor DC sumber daya terpisah atau <i>Separately Excited DC Motor</i> dan Motor DC sumber daya sendiri atau <i>Self Exited DC Motor</i>. Motor DC sumber daya sendiri ini dapat dibedakan lagi menjadi tiga jenis yaitu <i>Shunt Wound Motor DC, Series Wound Motor DC</i> dan <i>Compound Wound Motor DC</i>.</p>
+      <img src="gb2.PNG" alt="jenis-jenis motor dc">
+      <ol>
+        <li>Motor DC Sumber Daya Terpisah (Separately Excited DC Motor)</li>
+            <p>Pada Motor DC jenis sumber daya terpisah ini, sumber arus listrik untuk kumparan medan <i>(field winding)</i> terpisah dengan sumber arus listrik untuk kumparan angker <i>(armature coil)</i> pada rotor seperti terlihat pada gambar diatas ini. Karena adanya rangkaian tambahan dan kebutuhan sumber daya tambahan untuk pasokan arus listrik, Motor DC jenis ini menjadi lebih mahal sehingga jarang digunakan. <i>Separately Excited Motor DC</i> ini umumnya digunakan di laboratorium untuk penelitian dan peralatan-peralatan khusus.</p>
+        <li>Motor DC Sumber Daya Sendiri (Self Excited DC Motor)</li>
+            <p>Pada Motor DC jenis Sumber Daya Sendiri atau <i>Self Excited Motor DC</i> ini, kumparan medan <i>(field winding)</i> dihubungkan secara seri, paralel ataupun kombinasi seri-paraleldengan kumparan angker <i>(armature winding)</i>. Motor DC Sumber Daya Sendiri ini terbagi lagi menjadi 3 jenis Motor DC yaitu <i>Shunt DC Motor, Series DC Motor</i> dan <i>Compound DC Motor</i>.</p>
+      </ol>
+      <p>Jenis Motor Self Excited</p>
+      <ul>
+        <li>Motor Shunt</li>
+            <p>Motor DC tipe Shunt ini merupakan tipe Motor DC yang sering digunakan, hal ini dikarenakan Motor DC Shunt memiliki kecepatan yang hampir konstan meskipun terjadi perubahan beban (kecepatan akan berkurang apabila mencapai torsi <i>(torque)</i> tertentu).</p>
+        <li>Motor DC Tipe Seri</li>
+            <p>Dengan hubungan seri tersebut, arus listrik pada kumparan medan adalah sama dengan arus listrik pada kumparan angker. Kecepatan pada Motor DC tipe seri ini akan berkurang seiring dengan penambahan beban yang diberikan pada motor DC tersebut. Motor DC jenis ini tidak boleh digunakan tanpa ada beban yang terpasang karena akan berputar cepat tanpa terkendali.</p>
+        <li>Motor DC Gabungan</li>
+            <p>Dengan gabungan hubungan seri dan paralel tersebut, Motor DC jenis <i>compound</i> ini mempunyai karakteristik seperti Series DC Motor yang memiliki torsi <i>(torque)</i> awal yang tinggi dan karakteristik Shunt DC Motor yang berkecepatan hampir konstan.</p>
+      </ul>
+    </section>
+    <footer>
+      <a href="01.html" class="previous">&laquo; Previous</a>
+      <a href="02.html" class="next">Next &raquo;</a>
+  </footer>
+  </body>
+</html>

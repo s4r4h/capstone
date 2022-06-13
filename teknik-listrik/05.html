@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+      };      
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>Teknik Listrik | 05. Hukum Ohm, Daya, dan Energi</title>
+    <link rel="stylesheet" href="../styles/course.css">
+    <script src="https://kit.fontawesome.com/de8de52639.js"></script>
+  </head>
+  <body>
+    <section class="one">
+      <div class="jumbotron">
+        <h1><a href="maincouse.html">Hukum Ohm, Daya, dan Energi</a></h1>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="dashboard">
+        <a href="index.html"><i class="fas fa-home" id="btn"></i></a>
+      </div>
+    <div class="sidebar">
+      <header>TEKNIK LISTRIK</header>
+      <ul class="module">
+        <li style="list-style:none;"><a href="01.html">01. Segitiga Daya, Sifat Isolator, dan Motor DC</a></li>
+        <li style="list-style:none;"><a href="02.html">02. Sifat Beban R, L, dan C</a></li>
+        <li style="list-style:none;"><a href="03.html">03. Perangkat Elektronika Daya</a></li>
+        <li style="list-style:none;"><a href="04.html">04. Arus, Tegangan, dan Resistansi</a></li>
+        <li style="list-style:none;"><a href="05.html">05. Hukum Ohm, Daya, dan Energi</a></li>
+      </div>
+    </section>
+    <section class="two">
+        <ol type="A">
+            <strong><li>HUKUM OHM</li></strong>
+                <p>Antara nilai resistansi R yang di ukur dalam ohm ($\Omega$), arus I yang di ukur dalam ampere (A) dan tegangan (E) yang di ukur dlam volt (V) terdapat hubungan yang hakiki.</p>
+                <p>Seorang fisikawan Jerman, Georg Simon Ohm (1787-1854), mengemukakan hukum utama dalam kelistrikan, yang berbunyi :</p>
+                <q><i><strong>Tegangan v pada suatu resistor sebanding dengan arus i yang melalui resistor tersebut.</strong></i></q>
+                <p>Hubungan tersebut dinyatakan dalam hukum ohm, yaitu bahwa arus I yang mengalir dalam rangkaian berbanding lurus dengan tegangan E (V) dan berbanding terbalik dengan resistensi R. Dalam bentuk persamaan:</p>
+                $$V=I.R$$
+                $$I=\frac{V}{R}$$
+                <p>Harga $R$ memiliki rentang dari nol hingga tak hingga. Keadaan dimana suatu elemen memiliki tahanan $R = 0$, disebut sebagai hubung singkat (<i>short circuit</i>). Sedangkan keadaan dimana suatu elemen memiliki tahanan $R = \infinity$, disebut sebagai hubung terbuka (<i>open circuit</i>). Pada keadaan hubung singkat, dapat diasumsikan bahwa konduktor bertindak sebagai konduktor sempurna.</p>
+                <img src="05.gb1.PNG" alt="rangkaian dasar">
+            <strong><li>DAYA</li></strong>
+                <p>Daya (<i>power</i>) didefenisikan sebagai laju kerja atau banyaknya kerja yang dilakukan dalam satu satuan waktu. Karena kerja diukur dalam joule (J) dan waktu dalam detik, maka dalam satuan MKS atau SI daya diukur dalam joule per detik (J/s) atau watt (W).</p>
+                <p>Dalam bentuk persamaan</p>
+                $$P=\frac{W(Joule)}{t(detik)}=\frac{W}{t} (watt, W)$$
+                <p>Satuan daya, yaitu watt, diambil dari nama ahli fisika inggris, James Watt (1736-1819). Untuk daya listrik yang besar biasanya digunakan satuan Kw (killo watt) atau MW (mega watt)</p>
+                $$1 Kw = 100) W dan MW=10^6 W$$
+                <p>Daya output motor biasanya dinyatakan dalam horsepower (hp).</p>
+                <p>1 horsepower = 746 watt (British)</p>
+                <p>1 hp = 735,5 watt (metrik)</p>
+                <p>Daya listrik adalah laju dimana kerja dilakukan atau laju dimana energi dikonversikan atau dikonsumsi pada suatu rangkaian listrik.</p>
+                $$P=\frac{W}{t}=\frac{V \times Q}{t}=\frac{V \times I \times t}{t}$$
+                <p>atau</p>
+                $$P=V\timesI watt (W)$$
+                <p>dengan</p>
+                <p>P adalah daya dalam Watt, W</p>
+                <p>V adalah beda potensial atau tegangan dalam volt, V</p>
+                <p>I adalah arus dalam ampere, A</p>
+                <p>Daya yang dikirimkan atau diserap oleh peralatan listrik dapat dicari tegangan dan arusnya dengan menggunakan rumus di atas. Dengan substitusi ohm, persamaan untuk daya dapat dinyatakan dalam dua bentuk lain</p>
+    </section>
+    <footer>
+      <a href="03.html" class="previous">&laquo; Previous</a>
+      <a href="05.html" class="next">Next &raquo;</a>
+  </footer>
+  </body>
+</html>
