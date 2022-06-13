@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
@@ -153,4 +154,344 @@ footer .previous {
 }
 footer a:hover {
   font-weight: bold;
+=======
+body {
+	margin: 0;
+	background-color:  white;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+/* Header */
+/* navbar atas dah dihapus */
+.navbar-brand {
+	font-size: 35px;
+}
+
+.nav {
+	margin-right: 35px;
+}
+.nav a {
+	margin: 0 5px;
+}
+
+/* Footer */
+footer {
+	background-color: #363945;
+	color: black;
+	font-family: 'EB Garamond';
+	padding: 30px 30px 80px 30px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Lora';
+	margin-bottom: 20px;
+}
+.contact img {
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+/* INDEX */
+.awal {
+	margin-bottom: 50px;
+	color: white;
+}
+.carousel-inner {
+	max-height: 500px;
+}
+#index2 {
+	margin-bottom: 100px;
+}
+#why2 {
+	margin-bottom: -120px;
+}
+#whyitmatters h2 {
+	font-size: 30px;
+}
+#whyitmatters p {
+	font-size: 16px;
+	font-family: 'Lora';
+	margin-bottom: 350px;
+}
+#whyitmatters img {
+	margin-bottom:30px;
+}
+#index3 {
+	margin-top: 100px;
+	background-color: black;
+	text-align: center;
+	color: white;
+	margin-bottom: 100px;
+}
+.videosection {
+	padding: 50px;
+	font-family: 'Lora';
+	margin-top: 50px;
+}
+#index4 {
+	align-items: center;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+#vertical-center {
+  	margin-top: 100px;
+}
+.vertical-center a:hover {
+	color: #577284;
+	text-decoration:none;
+}
+
+/* ABOUT US */
+#prolog {
+	color: white;
+	margin-bottom: 100px;
+	border-bottom: 1px solid #000;
+}
+#aus1 {
+	margin-bottom: 80px;
+}
+#kumpulanfoto {
+	margin-bottom: 100px;
+}
+#aus2 {
+	background-color: #f1f1f3;
+	margin-left: 150px;
+	color: white;
+	margin-bottom: 150px;
+}
+#aus3 {
+	padding: 100px;
+	font-size: 50px;
+}
+#aus4 {
+	margin-top: 100px;
+}
+.aus7-1 {
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 30px;
+	border-bottom: 3px solid #000;
+	padding-bottom: 30px;
+}
+
+/* Projects Article */
+.projectsheader .container-fluid {
+	background-color: white;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+.article {
+	padding: 5px 25% 7px 25%;
+	font-size: 18px;
+	color: black;
+}
+.bold {
+	color:  #34568B;
+}
+.rambo {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+
+/*Dropdown menu */
+.mainmenubtn {
+    background-color: #354259;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+.mainmenubtn:hover {
+    background-color: #ECE5C7;
+    color: #354259;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: white;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+/* Projects html */
+#project-1 p {
+	font-size: 50px;
+	color: white;
+	margin-bottom: 350px;
+}
+.Projects {
+    padding: 50px 0px 300px 0px;
+}
+
+.Grid a {
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    padding: 0px;
+    text-align: left;
+    color: #FDFDFD;
+    position: relative; 
+    text-align: left;
+    transition-duration: 800ms;
+    box-shadow: rgb(54, 57, 69) 5px 5px, 
+    rgb(67, 72, 86) 10px 10px, rgb(90, 96, 114) 15px 15px,
+    rgb(169, 174, 188) 20px 20px, rgb(212, 215, 221) 25px 25px;
+}
+.card .title, .desc {
+    padding-left: 16px;
+    font-weight: normal; 
+}
+.card:hover {
+    transition: all 0.2s ease-out;
+    top: -1vh;
+    background-color:  #FDFDFD;
+}
+
+.Grid {
+    display: grid;
+    padding: 0 5vw 0 3vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15vh;
+}
+.Grid p {
+	font-family: 'Lora';
+	font-weight: 600;
+}
+
+/* How You Can Help */
+#hych {
+	color: black;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+.hych2 {
+	font-size: 50px;
+	margin-bottom: 70px;
+	margin-top: 50px;
+	border-bottom: 2px solid #a4a6a8;
+	padding-bottom: 150px;
+}
+.hych3 {
+	text-align: center;
+	color: black;
+	font-size: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#hych4 h2 {
+	font-size: 25px;
+}
+.hych5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#mountain {
+	width: 25%;
+}
+
+/* Donate */
+.headerfoto {
+	background-image: url(dolphin3.jpg);
+}
+
+/* Responsive */
+@media screen and (max-width: 640px) {
+    .Grid {
+        display: grid;
+        padding: 0 5vw 0 5vw;
+        grid-template-columns: auto;
+        grid-gap: 8vh;
+    }
+    
+    .card {
+        padding: 0px;
+        text-align: left;
+        color: #FDFDFD;
+        position: relative; 
+        text-align: left;
+        transition-duration: 800ms;
+        box-shadow: rgb(90, 96, 114) 0px 2px 8px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.hych5 {
+    	flex-direction: column;
+    }
+
+    #mountain {
+    	width: 90%;
+    }
+
+	.vertical-center {
+		text-align: center;
+		margin-top: -50px;
+	}
+
+	#index3 iframe {
+		width: 100%;
+		height: 100%;
+	}
+	#judulawal {
+		font-size: 35px;
+		margin-bottom:30px;
+	}
+	.awal, #prolog, #aus1 {
+		padding: 0 50px 0 50px;
+	}
+	#fotoawal img, #rowkedua img {
+		/*margin-top: 20px;*/
+		display: none;
+	}
+	#rowaus, #rowketiga {
+		padding: 20px;
+	}
+	#aus3 {
+		padding: 20px 50px 20px 50px;
+	}
+	#aus2 {
+		margin-left: 30px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.vertical-center {
+		text-align: center;
+		margin-top: -50px;
+	}
+}
+
+@media screen and (max-width: 1209px) {
+	#rowkedua img {
+		width: 100%;
+		height: 100%;
+	}
+>>>>>>> 79a39ee229e40cb2a2300962221d7df4fcbee459
 }
