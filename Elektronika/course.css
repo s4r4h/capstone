@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: "Noto Serif", sans-serif;
+  margin: 0;
+  background-color:  white;
+}
+.jumbotron {
+  position: fixed;
+  top: 0px;
+  height: 18%;
+  width: 100%;
+  font-size: 24px;
+  background-color: #363945;
+  text-align: left;
+  z-index: 2;
+}
+.jumbotron a {
+  text-decoration: none;
+  color: white;
+}
+.jumbotron h1 {
+  margin: 20pt auto 20pt 20pt;
+  color: white;
+}
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 500px;
+  height: 100%;
+  background: #363945;
+  transition: all .5s ease;
+  z-index: 8;
+}
+.sidebar header {
+  font-size: 22px;
+  color: 354259;
+  line-height: 118px;
+  text-align: center;
+  background: #C2DED1;
+  user-select: none;
+}
+.sidebar .module a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 45px;
+  font-size: 15px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+  text-decoration: none;
+}
+.module li:hover a{
+  padding-left: 50px;
+}
+.sidebar .module a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: fixed;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  right: 500px;
+  top: 25px;
+  font-size: 35px;
+  background: #C2DED1;
+  color: #363945;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+  z-index: 5;
+}
+label #cancel{
+  z-index: 1111;
+  right: 430px;
+  top: 35px;
+  font-size: 30px;
+  background: #363945;
+  color: #C2DED1;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  right: -500px;
+}
+#check:checked ~ label #btn{
+  right: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#check:checked ~ label #cancel{
+  right: -445px;
+}
+#check:checked ~ section{
+  margin-left: 0px;
+}
+.dashboard #btn{
+  position: fixed;
+  background: #C2DED1;
+  border-radius: 3px;
+  cursor: pointer;
+  right: 500px;
+  top: 25px;
+  font-size: 35px;
+  color: #363945;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+  z-index: 5;
+}
+#check:checked ~ .dashboard #btn{
+  right: 100px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.two {
+  padding: 8%;
+  line-height: 1.5;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #C2DED1;
+  padding-top: 2%;
+}
+footer a {
+  position:absolute;
+  border: 2px solid #363945;
+  border-radius: 20%;
+  padding: 8px 16px;
+  color: #363945;
+  text-decoration: none;
+}
+footer .next {
+  right: 2%;
+}
+footer .previous {
+  left: 2%;
+}
+footer a:hover {
+  font-weight: bold;
+}

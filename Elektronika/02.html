@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+      };      
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>Teknik Elektronika | 02. Saklar dan Fuse</title>
+    <link rel="stylesheet" href="course.css">
+    <script src="https://kit.fontawesome.com/de8de52639.js"></script>
+  </head>
+  <body>
+    <section class="one">
+      <div class="jumbotron">
+        <h1><a href="maincouse.html">Saklar dan Fuse</a></h1>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="dashboard">
+        <i class="fas fa-home" id="btn"></i>
+      </div>
+    <div class="sidebar">
+      <header>TEKNIK LISTRIK</header>
+      <ul class="module">
+        <li style="list-style:none;"><a href="01.html">01. Peranan Pengukuran dan AMMeter DC</a></li>
+        <li style="list-style:none;"><a href="02.html">02. Saklar dan Fuse</a></li>
+      </ul>
+      </div>
+    </section>
+    <section class="two">
+      <h2>Saklar</h2>
+      <p>Saklar listrik atau switch adalah </p>
+      <ol> 
+        <li>Suatu alat untuk membuka dan menutup suatu rangkaian listrik,</li>
+        <li>Atau untuk memasukkan kembali suatu sinyal listrik ke dalam suatu rangkaian listrik.</li>
+        <ul>
+          <li>Posisi menutup adalah on . Pada posisi ini resistansi sangat kecil. Karena itu, arus maksimum dapat mengalir ke beban dengan jatuh tegangan praktis 0 volt.</li>
+          <li>Posisi menutup adalah on . Pada posisi ini resistansi sangat kecil. Karena itu, arus maksimum dapat mengalir ke beban dengan jatuh tegangan praktis 0 volt. </li>
+        </ul>
+      </ol>
+
+      <h3>Saklar pada Rangkaian</h3>
+      <p>Pada rangkain listrik, saklar dihubungkan secara seri terhadap beban (lampu) dan sumber tegangan (Baterai) </p>
+      <img src="gambar14.png" alt="rangkaian dc"> <br>
+
+      <h3>Karakteristik Switch</h3>
+      <p>Selain ukuran mekanis dan jenisnya, pertimbangan berikut harus diperhatikan dalam memilih saklar:</p>
+      <ul>
+        <li>Tegangan maksimum <i>(off)</i></li>
+        <li>Arus maksimum <i>(on)</i></li>
+        <li>Resistansi terbuka <i>(off)</i></li>
+        <li>Resistansi menutup <i>(on)</i></li>
+      </ul>
+
+      <p>Saklar yang paling umumdigunakan dalam elektronik adalah:</p>
+      <ul>
+        <li>Toggle switch</li>
+        <li>Slide switch</li>
+        <li>Push button switch</li>
+        <li>Rotary switch</li>
+      </ul>
+
+      <h3>Toggle Switch</h3>
+      <p>Penggerak dari toggle switch adalah penyambung toggle yang diberi beban per, sehingga dapat menghasilkan satu pemindahan kontak yang sangat cepat.</p>
+      <img src="gambar15.png" alt="rangkaian dc"> <br>
+      <p>Pemakaian:</p>
+        <ul>
+          <li>Power Supply <i>(on/off)</i></li>
+          <li>Switching over berbagai fungsi peralatan elektronika</li>
+        </ul>
+
+      <h2>Fuse</h2>
+      <ul>
+        <li>Pemasangan fuse berguna untuk mencegah kejadian beban lebih,
+          utamanya yang diakibatkan oleh terjadinya hubung singkat.</li>
+        <li>Hubung singkat akan mengakibatkan aliran listrik yang berlebihan
+          dalam rangkaian, sehingga menyebabkan rusaknya rangkaian. </li>
+        <li>Dengan penggunaan fuse, maka fuse akan terputus dulu sebelum
+          rangkaian rusak. </li>
+        <li>Elemen fuse bisa terbuat dari aluminium, tembaga yang dilapisi oleh
+          timah atau nikel.</li>
+        <li>Fuse tersedia di pasaran dengan rating arus 1/500 Ampere sampai beberapa ratus ampere.</li>
+        <li>Elemen fuse mempunyai resistansi yang sangat rendah.</li>
+      </ul>
+
+      <h3>Fuse Dalam Rangkaian Elektronik</h3>
+      <ul>
+        <li>Fuse yang sering digunakan dalam rangkaian elektronik adalah
+          ‘glass cartridge fuse’.</li>
+        <li>Glass cartridge fuse tersedia dalam 2 ukuran</li>
+        <li>5 mm diameter x 20 mm panjang (standar Eropa)</li>
+        <li>½ inch diameter x 1½ inch panjang (standar Amerika)</li>
+        <li>Dalam rating arus dari 50 mA sampai 10 A fuse tersebut dipasang dalam fuse holder yang ditempel pada panel atau PCB.</li>
+      </ul>
+
+      <h3>Glass cartridge fuse dan holder</h3>
+      <img src="gambar16.png" alt="rangkaian dc"> <br>
+      
+      <h3>Slow Blow Fuse</h3>
+      <ul>
+        <li>Fuse jenis ini mempunyai coil/kumparan.</li>
+        <li>Fuse ini dirancang hanya pada arus atau beban lebih yang terjadi
+          secara kontinyu, misalnya hubung singkat.</li>
+        <li>Fuse ini dirancang hanya pada arus atau beban lebih yang terjadi
+          secara kontinyu, misalnya hubung singkat.</li>
+        <li>Sebagai contoh, <i>‘slow blow fuse 1A’</i> akan mampu menahan 400%
+          arus lebih hingga 2 detik.
+          </li>
+      </ul>
+      
+      <h3> Pengetesan Fuse</h3>
+      <ul>
+        <li>Fuse yang terbakar menunjukkan harga bacaan tak terhingga.</li>
+        <li>Untuk mengetes fuse dengan ohmmeter, maka daya harus dimatikan dan fuse
+          dicabut.</li>
+        <li>Namun bila sulit dibuka, maka dapat digunakan rangkaian gambar 2.11 untuk
+          mengukurnya (a) fuse bagus dan (b) fuse yang putus</li>
+      </ul>
+      <img src="gambar17.png" alt=""> <br>
+      
+      <h3>Pilot Lamp</h3>
+      <ul>
+        <li>Lampu yang digunakan sebagai indicator yang menunjukkan bahwa
+          suatu peralatan dalam posisi ‘on’</li>
+        <li><i> a) Bayonet base, (b) Screw base, (c) Lampu miniature dengan soket
+          screw, (d) lampu miniature dengan soket bayonet, (e) soket</i></li>
+      </ul>
+      <img src="gambar18.png" alt=""> <br>
+
+    </section>
+    <footer>
+      <a href="01.html" class="previous">&laquo; Previous</a>
+      <a href="02.html" class="next">Next &raquo;</a>
+  </footer>
+  </body>
+</html>
