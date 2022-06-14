@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+      };      
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>Teknik Telekomnunikasi | 01. Pengenalan Jaringan Telekomunikasi</title>
+    <link rel="stylesheet" href="../styles/course.css">
+    <script src="https://kit.fontawesome.com/de8de52639.js"></script>
+    <link rel="icon" href="gambar/logo.png">
+  </head>
+  <body>
+    <section class="one">
+      <div class="jumbotron">
+        <h1><a href="../index.html">Pengenalan Jaringan Telekomunikasi</a></h1>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="dashboard">
+        <i class="fas fa-home" id="btn"></i>
+      </div>
+    <div class="sidebar">
+      <header>TEKNIK TELEKOMUNIKASI</header>
+      <ul class="module">
+        <li style="list-style:none;"><a href="01.html">01. Pengenalan Jaringan Telekomunikasi</a></li>
+        <li style="list-style:none;"><a href="02.html">02. Jaringan Akses Telepon</a></li>
+        <li style="list-style:none;"><a href="03.html">03. Jaringan Synchronous Digital Hierarchy (SDH)</a></li>
+        <li style="list-style:none;"><a href="04.html">04. Jaringan Akses PSTN </a></li>
+        <li style="list-style:none;"><a href="05.html">05. Integrated Services Digital Network</a></li>
+      </ul>
+      </div>
+    </section>
+    <section class="two">
+      <h2><b>Pendahuluan</b></h2>
+      <p>Jaringan telekomunikasi adalah jaringan yang menghubungkan peralatan-peralatan komunikasi yang lokasinya berjauhan. Teknologi inilah yang memungkinkan seseorang dapat mengirimkan informasi ke tempat jauh, atau menerima informasi dari tempat jauh, sehingga jarak geografis menjadi tidak berarti. Bab ini menguraikan jaringan telekomunikasi secara umum, sehingga mahasiswa mampu menjelaskan konfigurasi, komponen-komponen, dan macam-macam jaringan telekomunikasi secara umum.</p>
+
+      <h2><b>Jaringan Telekomunikasi Secara Umum</b></h2>
+      <p>Jaringan dalam sistem telekomunikasi adalah setiap perangkat dan media (yang saling berhubungan) yang berfungsi untuk menyalurkan komunikasi yang berlangsung antara dua tempat atau lebih. <br> Contohnya sederhana </p>
+      <figure align="center">
+      <img src="img1.png" alt="saluran transmisi">
+      <figcaption align="center">Gambar 1. Saluran Transmisi </figcaption>
+      </figure>
+      <p>Jaringan ini biasanya terbuat dari bahan logam berupa kawat atau kabel yang direntangkan antara kedua belah pihak yang berkomunikasi. Bila A ingin berkomunikasi dengan pelanggan lain maka diperlukan jaringan lain. </p>
+      <p>Jaringan telekomunikasi secara keseluruhan adalah segenap perangkat telekomunikasi yang menghubungkan pemakainnya dengan pemakai lain, sehingga kedua pemakai tersebut dapat saling bertukar informasi (baik suara, data maupun gambar). </p>
+      <figure align="center">
+        <img src="img2.png" alt="jaringan telekomunikasi">
+        <figcaption align="center">Gambar 2. Jaringan Telekomnunikasi secara keseluruhan </figcaption>
+      </figure>
+
+      <h2><b>Komponen Pembentuk Jaringan Telekomunikasi </b></h2>
+      <p>Secara garis besar jaringan telekomunikasi terdiri dari dua ruas yaitu :</p>
+      <ul>
+        <li>ruas antara terminal dan switching, ruas ini disebut dengan access network atau jaringan akses</li>
+        <li> ruas antara switching dan switching, ruas ini disebut dengan backbound network </li>
+      </ul>
+      <figure align="center">
+        <img src="img3.png" alt=" pembentuk jaringan telekomunikasi">
+        <figcaption align="center">Gambar 3. Komponen pembentuk jaringan telekomunikasi </figcaption>
+      </figure>
+      
+      <h3>Perangkat terminal</h3>
+      <p>Terminal adalah peralatan yang bertugas merubah sinyal informasi asli ( suara manusia, gambar atau lainnya) menjadi sinyal elektrik atau elektromagnetik atau cahaya.Hal Ini diperlukan karena perangkat transmisi yang mampu menyampaikan informasi tersebut dari satu tempat ke tempat lain yang umumnya tidak dekat dalam waktu cepat memang mensyaratkan agar sinyal informasi diubah menjadi sinyal listrik ( untuk dilewatkan kabel) atau menjadi sinyal elektromagnetik (untuk dilewatkan udara) atau menjadi sinyal cahaya ( untuk dilewatkan serat optic).</p>
+      <figure align="center">
+        <img src="img4.png" alt=" Contoh perangkat terminal">
+        <figcaption align="center">Gambar 4. Contoh perangkat terminal </figcaption>
+      </figure>
+
+      <h3>Perangkat transmisi</h3>
+      <p>Perangkat transmisi bertugas menyampaikan informasi dari satu tempat ke tempat lain. Media transmisi bisa berupa kabel, serat optic, maupun udara bergantung jarak dari tempat-tempat yang akan dihubungkan dan banyaknya tempat yang akan dihubungkan.</p>
+      <ol type="a">
+        <li><b> Kabel Tembaga</b></li>
+          <ol type="1">
+            <li>Kabel tembaga adalah pasangan kabel yang dipakai untuk menghantar informasi dari pelanggan ke sentral.</li>
+            <li>Umumnya frekuensi yang digunakan adalah frekuensi pembicaraan ( 0 – 4 KHz), karena sinyal yang digunakan adalah sinyal AC dan DC maka karakteristik dominan yang diperhatikan adalah redaman kabel dan perubahan fasa terhadap frekuensi.</li>
+          </ol>
+          <figure align="center">
+            <img src="img5.png" alt=" Kabel Tembaga">
+            <figcaption align="center">Gambar 5. Kabel Tembaga </figcaption>
+          </figure>
+        
+          <li><b> Kabel Koaksial </b></li>
+            <ol type="1">
+            <li>Kabel koaaksial adalah kabel yang terdiri satu kawat inti ditengah yang dibungkus secara berlapis oleh plastik, kawat screen, plastik,aluminium foil dan terakhir adalah lapisan plastik lagi (polyethilene).</li>
+            <li>Contohnya adalah kabel antena TV. Kabel koaksial redamannya jauh lebih kecil dibandingkan dengan kabel tembaga biasa. Kabel ini digunakan untuk gelombang yang membawa kanal multipleks yang besar.</li>
+            </ol>
+            <figure align="center">
+              <img src="img6.png" alt=" Kabel koaksial">
+              <figcaption align="center">Gambar 6. Kabel koaksial </figcaption>
+            </figure>
+          
+          <li><b>Serat Optik</b></li>
+          <p>Kabel serat optik adalah kabel yang intinya terbuat dari serat kaca atau bahan plastic yang kualitas atau kemurnian tinggi sehingga mampu melewatkan cahaya. Untuk kaca biasanya digunakan kaca silica. Kabel serat optic biasanya digunakan untuk hubungan yang jarak jauh dan kabel laut, untuk hubungan local biasanya digunakan untuk membawa sinyal informasi multimedia.</p>
+          <figure align="center">
+            <img src="img7.png" alt=" Kabel Serat Optik">
+            <figcaption align="center">Gambar 7. Kabel Serat Optik </figcaption>
+          </figure> <br>
+          <figure align="center">
+            <img src="img8.png" alt=" Sejarah Kabel laut">
+            <figcaption align="center">Gambar 8. Sejarah Kabel Bawah Laut </figcaption>
+          </figure> <br>
+          <figure align="center">
+            <img src="img9.png" alt=" Jaringan Kabel laut">
+            <figcaption align="center">Gambar 9. Jaringan Kabel Bawah Laut </figcaption>
+          </figure> <br>
+          <figure align="center">
+            <img src="img10.png" alt=" Jaringan Kabel laut Indonesia">
+            <figcaption align="center">Gambar 10. Jaringan Kabel Bawah Laut Indonesia </figcaption>
+          </figure> <br>
+
+          <li><b>Transmisi Radio</b></li>
+          <p>Penggunaan frekuensi radio sangat bergantung pada tujuan dan sifat apilkasinya. Yang dijadikan sebagai bahan pertimbangan adalah jarak, iklim, kodisi kontur/lapangan dan kapasitas kanal.</p>
+          <ul>
+            <li>Transmisi radio terrestrial</li>
+            <p>Gelombang radio yang termasuk dalam kelompok ini merambat tidak jauh atau sejajar permukaan bumi.</p>
+            <figure align="center">
+              <img src="img11.png" alt=" Transmisi Radio Terrestial">
+              <figcaption align="center">Gambar 11. Transmisi Radio Terrestial </figcaption>
+            </figure>
+            <li>Transmisi Radio Satelit</li>
+            <p>Transmisi radio yang menggunakan satelit sebagai pengulang atau repeater. Biasanya digunakan untuk trasmisi jarak jauh dan daerah-daerah yang sulit dijangkau dengan menggunakan transmisi radio terrestrial.</p>
+            <figure align="center">
+              <img src="img12.png" alt=" Transmisi Radio satelit">
+              <figcaption align="center">Gambar 12. Transmisi Radio satelit </figcaption>
+            </figure>
+          </ul>
+      </ol>
+
+      <h3><b> Perangkat switching </b></h3>
+      <p>Perangkat penyambungan bertugas agar pemakai dapat menghubungi pemakai lain seperti yang diinginkan. Perangkat switching dilengkapi dengan peralatan-peralatan yang melakukan fungsi pengontrolan, penyambungan maupun pengebelan. </p>
+      <ul>
+        <li>Peralatan control berfungsi untuk penyelenggaraan, pengendalian dan pembangunan hubungan pada peralatan penyambungan.</li>
+        <li>Peralatan penyambungan untuk menentukan arah hubungan, peralatan penyambungan ini mampu menganalisa informasi yang diterimanya dari pemanggil. </li>
+        <li>Peralatan pengebelan berperan untuk memberikan informasi kepada pelanggan berupanada-nada tertentu, yaitu nada pilih, nada panggil maupuin nada sibuk.</li>
+      </ul>
+
+      <h2><b>Bentuk Konfigurasi Jaringan</b></h2>
+      <h3><b>Jaringan Mata Jala</b></h3>
+      <p>Jaringan mata jala adalah jaringan yang menghubungkan antara satu titik dengan titik lain tanpa melalui satu titik pusat. Bila jumlah sentral sama dengan S dan jumlah saluran yang dibutuhkan adalah N maka dapat dirumuskan:</p>
+      <p> $N = \frac {S(S-1)}{2}$</p>
+      <figure align="center">
+        <img src="img13.png" alt=" Jaringan Mata Jala ">
+        <figcaption align="center">Gambar 13. Jaringan Mata Jala </figcaption>
+      </figure>
+      <p>Contoh: <br> Jumlah Sentral = 5<br> $N = \frac {5(5-1)}{2} = \frac {20}{2} = 10 $</p>
+      <p><b>Keuntungan dari jaringan mata jala</b><br>
+      <ol>
+        <li>Tiap sentral mempunyai derajat yang sama.</li>
+        <li>Tiap sentral mempunyai derajat yang sama.</li>
+        <li> Peralatan switching dapat lebih sederhana</li>
+        <li> Syarat saluran lebih murah</li>
+        <li> Bila salah satu saluran penghubung terganggu, maka hubungan antar sentral masih tetap dapat dilakukan melalui saluran yang lain.</li>
+      </ol></p>
+      <p><b>Kerugian jaringan mata jala</b></p>
+      <ol>
+        <li>Efisiensi saluran rendah karena memerlukan banyak berkas</li>
+        <li>Konsentrasi saluran agak rendah</li>
+        <li>Jaringan mata jala yang satu dengan yang lain sulit dihubungkan</li>
+      </ol>
+
+      <h3><b>Jaringan Bintang</b></h3>
+      <p>Pada sistem yang menggunakan jaringan bintang akan terdapaat satu sentral utama/host/tandem berfungsi sebagai sentral transit yang menghubungkan semua sentral yang terhubung kepadanya.</p>
+      <figure align="center">
+        <img src="img14.png" alt=" Jaringan Bintang ">
+        <figcaption align="center">Gambar 14. Jaringan Bintang </figcaption>
+      </figure>
+      <p><b>Sifat-sifat jaringan Bintang</b></p>
+      <ol>
+        <li> Cocok untuk jaringan dengan volume trafik yang rendah</li>
+        <li> Trafik ke sentral lain (antar sentral) dari suatu sentral dikonsentrasikan melalui sentral transit, sehingga sentral transit biasanya mempunyai derajat yang lebih tinggi.</li>
+        <li> Jumlah berkas saluran S linear terhadap jumlah sentral N atau S = N-1 <br><i> Contoh : N = 5 sentral maka S = 5 – 1 = 4 saluran</i></li>
+        <li> Konsentrasi saluran besar</li>
+        <li> Efisiensi saluran tinggi</li>
+      </ol>
+      <p><b>Kelemahan jaringan bintang</b><br>Bila sentral transit mengalami gangguan (break down) maka semua sentral di bawahnya akan terisolir (tidak dapat saling berhubungan)</p>
+
+      <h3>Jaringan kombinasi</h3>
+      <p>Bentuk jaringan digunakan dengan tujuan mengambil sifat-sifat baik dari dua jenis jaringan yang ada.</p>
+      <figure align="center">
+        <img src="img15.png" alt=" Jaringan kombinasi ">
+        <figcaption align="center">Gambar 15. Jaringan kombinasi </figcaption>
+      </figure>
+      <p><b>Keuntungan Jaringan Kombinasi</b></p>
+      <ul>
+        <li>Penggunaan Saluran lebih efisien</li>
+        <li> Trafik yang kecil dilewatkan melalui link tandem, sedangkan trafik yang besar dilewatkan melalui link langsung (direct link)</li>
+        <li>Memungkinkan menggunakan rute alternative untuk trafik limpahan dari rute langsung.</li>
+      </ul>
+      <p><b>Kelemahan Jaringan Kombinasi</b></p>
+      <ul>
+        <li> Perangkat sentral menjadi lebih kompleks sehingga harganya menjadi lebih mahal.</li>
+        <li>  Perangkat sentral menjadi lebih kompleks sehingga harganya menjadi lebih mahal.</li>
+      </ul>
+    
+      <h3><b>Jaringan Cincin</b></h3>
+      <ol>
+        <li> Dalam topologi cincin, setiap titik dihubungkan langsung hanya pada dua titik yang tetangga yang berdekatan.</li>
+        <li> Jika satu titik ingin mengirimkan informasi pada node lain dalam cincin, titik tersebut harus melewati beberapa titik lainnya yang bertindak sebagai repeater dan mengirimkan kembali informasi pada saluran outgoing.</li>
+      </ol>
+      <figure align="center">
+        <img src="img16.png" alt=" Jaringan cincin ">
+        <figcaption align="center">Gambar 16. Jaringan cincin </figcaption>
+      </figure>
+      <p><b>Keuntungan</b></p>
+      <ul>
+        <li>Suatu jaringan cincin mudah sekali di konfigurasi dan diinstall.</li>
+        <li>Dalam jaringan secara normal sinyal disirkulasikan setiap waktu. Bila node tidak menerima sinyal untuk waktu tertentu menunjukan adanya kesalahan sederhana pada cincin tersebut. Bila ada node yang mengalami kerusakan maka dengan mudah dapat diisolasi sehingga tidak menggangu pada kinerja sistem secara keseluruhan.</li>
+      </ul>
+      <P><b>Kelemahan</b></p>
+      <ul>
+        <li>Bila satu titik tidak berfungsi maka seluruh jaringan tidak akan berfungsi. Untuk menghindari kelemahan tersebut biasanya menggunakan cincin ganda.</li>
+        <li>Bila satu titik tidak berfungsi maka seluruh jaringan tidak akan berfungsi. Untuk menghindari kelemahan tersebut biasanya menggunakan cincin ganda.</li>
+      </ul>
+    
+    <h3><b>Jaringan Bus</b></h3>
+    <ol>
+      <li>Topologi bus menggunakan filosofi multipoint (broadcast). Dalam hal ini sebuah kabel panjang di sebut bus membentuk backbone pada seluruh titik</li>
+      <li> Jika satu titik menginginkan untuk mengirim data ke beberapa titik maka titik memasukan data tersebut pada bus yang akan membawa data tersebut ke node lainnya melalui jalur bus yang ada.</li>
+    </ol>
+    <figure align="center">
+      <img src="img17.png" alt=" Jaringan bus ">
+      <figcaption align="center">Gambar 17. Jaringan bus </figcaption>
+    </figure>
+    <p><b>Keuntungan</b></p>
+    <ul>
+      <li>mudah untuk diinstal</li>
+      <li>menggunakan panjang kabel yang lebih pendek dibandingkan topologi lainnya.</li>
+    </ul>
+    <p><b>Kelemahan</b></p>
+    <ul>
+      <li>Topologi ini tidak flesibel karena penambahan satu titik menyebabkan perubahan konfigurasi dan penambahan pajang rata-rata kabel.</li>
+      <li>Pengisolasian kerusakan sangat sulit dilaksanakan karena akan menganggu kinerja jaringan.</li>
+      <li> Bila bus mengalami kerusakan maka seluruh titik tidak berfungsi.</li>
+    </ul>
+
+    <h3><b>Jaringan Pohon</b></h3>
+    <ol>
+      <li>Jaringan pohon dapat diturukan dari topologi bintang yang berirarki membentuk sebuah percabangan pohon, hanya beberapa node yang langsung berhubungan dengan sentral pusat.</li>
+      <li>Sentral pusat berisi repater yang menerima sinyal informasi yang masuk dan meregenerate ke sentral dibawahnya yang dituju.</li>
+      <li>Sentral pusat merupakan sentral yang aktif sementara sentral dibawahnya adalah sentral yang pasif.</li>
+      <li>Kelebihan dan kelemahannya sama dengan topologi jaringan bintang</li>
+    </ol>
+    <figure align="center">
+      <img src="img18.png" alt=" Jaringan pohon ">
+      <figcaption align="center">Gambar 18. Jaringan pohon </figcaption>
+    </figure>
+
+    <h2><b>Hirarki Jaringan</b></h2>
+    <p>Pada suatu Negara yang mempunyai wilayah geografis yang luas, jika jaringan telekomunikasinya hanya terdiri dari sentral local dan tandem saja akan menjadi rumit dan mahal.</p>
+    <p>Pembangunan hubungan panggilan akan memakan waktu yang lama dan kemungkinan gagal menjadi tinggi.</p>
+    <p>Pemakaian peralatan sentral selama pendudukan panggilan menjadi tidak efisien, karena banyak sentral transit yang dilaluinya. Hal ini dapat diatasi dengan menggunakan sesedikit mungkin sentral perantara dengan menggunakan jaringan berhirarki untuk memudahkan strategi ruting</p>
+    <figure align="center">
+      <img src="img19.png" alt="Hirarki jaringan telepon">
+      <figcaption align="center">Gambar 19. Hirarki jaringan telepon </figcaption>
+    </figure>
+
+    <h2><b>Macam-Macam Jaringan Telekomunikasi</b></h2>
+    <ul>
+      <li>PSTN (Public Switch Telepon Network)</li>
+      <li>PLMN (Public Land Mobile Network)</li>
+      <li>ISDN ( Integrated Services Digital Network)</li>
+    </ul>
+    
+    </section>
+
+    <footer>
+      <a href="01.html" class="previous">&laquo; Previous</a>
+      <a href="02.html" class="next">Next &raquo;</a>
+  </footer>
+  </body>
+</html>

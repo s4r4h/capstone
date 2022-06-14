@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+      };      
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>Teknik Telekomnunikasi | 02. Jaringan Akses Telepon</title>
+    <link rel="stylesheet" href="../styles/course.css">
+    <script src="https://kit.fontawesome.com/de8de52639.js"></script>
+    <link rel="icon" href="gambar/logo.png">
+  </head>
+  <body>
+    <section class="one">
+      <div class="jumbotron">
+        <h1><a href="../index.html">Jaringan Akses Telepon</a></h1>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="dashboard">
+        <i class="fas fa-home" id="btn"></i>
+      </div>
+    <div class="sidebar">
+      <header>TEKNIK TELEKOMUNIKASI</header>
+      <ul class="module">
+        <li style="list-style:none;"><a href="01.html">01. Pengenalan Jaringan Telekomunikasi</a></li>
+        <li style="list-style:none;"><a href="02.html">02. Jaringan Akses Telepon</a></li>
+        <li style="list-style:none;"><a href="03.html">03. Jaringan Synchronous Digital Hierarchy (SDH)</a></li>
+        <li style="list-style:none;"><a href="04.html">04. Jaringan Akses PSTN</a></li>
+        <li style="list-style:none;"><a href="05.html">05. Integrated Services Digital Network</a></li>
+      </ul>
+      </div>
+    </section>
+    <section class="two">
+      <h2><b>Pendahuluan</b></h2>
+      <p>Jaringan akses adalah jaringan yang menghubungkan pelanggan dengan 
+        sentral telepon. Jaringan ini adalah dasar jaringan telekomunikasi, karena pada 
+        dasarnya jaringan telekomunikasi adalah gabungan dari beberapa jaringan akses. 
+        Jaringan akses sering juga disebut sebagai outside plan (OSP), beberapa istilah juga 
+        sering disebut sebagai jaringan lokal akses. Bab ini membahas Jaringan lokal, 
+        jaringan <i>junction</i> dan jaringan <i>trunk</i>. Pada jaringan lokal terdapat empat jaringan
+        akses, yakni : Jaringan Lokal Akses Kabel (Jarlokab atau Jarkab), Jaringan Lokal 
+        Akses Radio (Jarlokar), Jaringan Lokal Akses Fiber Optik (Jarlokaf), dan Jaringan 
+        Akses Hibrid. Pada akhir bab ini mahasiswa akan dapat menjelaskan macam-macam 
+        jaringan akses tersebut.</p>
+
+      <h2><b>1. Jaringan Lokal</b></h2>
+      <p>Jaringan lokal adalah jaringan yang menghubungkan pelanggan dengan 
+        sentral telepon. Jaringan lokal dibagi menjadi:</p>
+      <ul>
+        <li> Jaringan lokal berdasarkan material yang digunakan terdiri dari jaringan lokal 
+          akses kabel, jaringan lokal akses fiber, jaringan lokal akses radio, dan 
+          jaringan lokal akses hybrid</li>
+        <li>Jaringan lokal berdasarkan cara pencatuan terdiri dari daerah catuan langsung 
+          dan daerah catuan tidak langsung.</li>
+      </ul>
+     
+      <h3><b>Jaringan Lokal Akses Kabel</b></h3>
+      <p>Jaringan Lokal Akses Kabel (Jarlokab atau Jarkab), yaitu jaringan yang 
+        menggunakan kabel tembaga sebagai media transmisinya. Jaringan kabel adalah 
+        jaringan yang paling lama dan paling banyak digunakan. Peningkatan jaringan ini 
+        menggunakan teknologi penggandaan seperti Pair Gain dan xDSL.</p>
+        <figure align="center">
+          <img src="img20.png" alt="Bagan jaringan kabel lokal">
+          <figcaption align="center">Gambar 1. Bagan jaringan kabel lokal</figcaption>
+        </figure>
+        <p>jaringan n lokal terdiri dari :</p>
+
+        <ol type="1">
+        <li><b><i>Main Distribution Frame (MDF)</i></b></li>
+          <p>MDF merupakan penghubung jaringan ke peralatan yang terdapat di sentral. 
+            MDF tersusun dari beberapa terminal, pada bagian sisi depan terdapat terminal strip 
+            yang tersusun secara horizontal yang dihubungkan ke peralatan sentral. Pada sisi 
+            bagian belakang terdapat terminal strip yang disusun secara vertikal yang berfungsi 
+            untuk menyambung setiap urat kabel. Kedua sisi terminal dihubungkan dengan 
+            kawat-kawat sambung.</p> 
+            <p>Fungsi MDF:</p>
+            <ol type="a">
+              <li>Tempat melakukan pengetesan dan pengukuran, baik untuk pengetesan rutin 
+                maupun gangguan.</liR>
+              <li>Tempat melakukan pengisoliran sambungan untuk berbagai keperluan.</li>
+              <li> Tempat melakukan berbagai pekerjaan mutasi sambungan telepon</li>
+              <li>Tempat memasang protektor yang berfungsi melindungi kerusakan akibat 
+                tegangan tinggi atau arus yang membesar.</li>
+            </ol>
+            <figure align="center">
+              <img src="img21.png" alt=" Main Distribution Frame (MDF)">
+              <figcaption align="center">Gambar 2.  Main Distribution Frame (MDF)</figcaption>
+            </figure>
+          
+        <li><b>Rumah Kabel (RK)</b></li>
+            <p>Merupakan suatu unit terminal kabel yang merupakan titik akhir dari kabel 
+              primer dan titik terminal awal kabel sekunder. Cakupan RK atau <i>Cross Connect 
+                Cabinet</i> (CCC) ditentukan oleh batas-batas geografi seperti sungai, jalan besar dan 
+              lain-lain. Tempat jika tidak spesifik, maka disesuaikan dengan batas kapasitas RK 
+              tersebut. Umumnya satu RK digunakan untuk maksimum 900 pelanggan. 
+              Kapasitasnya ditentukan oleh <i>demand</i> 5 tahun mendatang dibagi 0,8. Kapasitas RK 
+              terdiri dari ukuran 800, 1200, 1600 dan 2400.</p> 
+              <p>Fungsi RK: </p>
+              <ol type="a">
+                <li> Tempat membagi kabel kapasitas besar menjadi beberapa kabel yang 
+                  berkapasitas kecil</li>
+                <li>Tempat melakukan pengetesan dalam melokalisir gangguan antara RK dan STO</li>
+              </ol>
+              <figure align="center">
+                <img src="img22.png" alt="Rumah Kabel (RK)">
+                <figcaption align="center">Gambar 3.  Rumah Kabel (RK)</figcaption>
+              </figure>
+        
+        <li><b><i>Distribution Point</i>(DP)</b></li>
+          <p>Distribution Point merupakan suatu unit terminal kabel yang merupakan terminasi akhir dari kabel sekunder dan terminal awal dari kabel penanggal (<i>dropwire</i>). Daerah cakupannya ditetapkan sedemikian rupa sehingga kabel <i>dropwire</i> dapat menjangkau rumah pelanggan. Kapasitas DP umumnya terdiri dari 10 dan 20 <i>pair</i>, namun dalam beberapa aplikasi terdapat kapasitas 49, 60, dan 100 <i>pair</i>. Kapasitas 10 <i>pair</i> biasa digunakan di daerah residensial, sedangkan 20 <i>pair</i> di daerah bisnis. Peletakannya ada di tiang atau di dinding. Perhitungan kapasitasnya adalah untuk kebutuhan sampai 5 tahun dibagi 0,8. Dari kapasitas yang tersedia disisakan 1 atau 2 line sebagai cadangan. Untuk daerah dengan kebutuhan kecil dapat ditambahkan penggunaan tiang untuk menyokong <i>dropwire</i>. Namun demikian jika terdapat lebih dari 3 <i>line dropwire</i> yang melebihi jarak 150 m sebaiknya ditiadakan.</p>
+            <p>Fungsi DP:</p>
+            <ol type="a">
+              <li>Tempat melakukan pengetesan dalam melokalisir suatu gangguan antara DP 
+                dan RK</li>
+              <li> Tempat penyambungan kabel penanggal</li>
+            </ol>
+            <figure align="center">
+              <img src="img23.png" alt="Distribution Point">
+              <figcaption align="center">Gambar 4.  Distribution Point</figcaption>
+            </figure>
+        
+          <li><b>Kabel Primer</b></li>
+            <p>Kabel primer adalah kabel yang dipasang antara sentral sampai ke Rumah Kabel (RK) atau sampai Distribution Point (DP) untuk daerah yang tercakup dalam Daerah Catuan Langsung. Kabel primer berkapasitas besar yaitu dari 100 sampai 2400 pair</p>
+          
+          <li><b>Kabel Sekunder</b></li>
+            <p>Kabel sekunder adalah suatu kabel yang dipasang antara Rumah Kabel sampai Distribution Piont. Biasanya kabel sekunder berkapasitas kecil yaitu sampai 200 pair.</p>
+
+          <li><b> Kabel Penanggal</b></li>
+              <p>Kabel penanggal adalah suatu kabel yang dipasang antara distribution point sampai ke titik terminal (Kotak Terminal Batas) yang terletak pada rumah pelanggan.</p>
+          
+          <li><b> Kabel dalam rumah (<i>Indoor Cable</i>)</b></li>
+              <p>ndoor cable adalah kabel yang terletak di dalam rumah yang dipasang dari kotak terminal batas sampai roset.</p>
+          
+          <li><b>IKR/G</b></li>
+              <p>Instalasi Kabel Rumah/Gedung adalah tatacara pemasangan jaringan telepon di dalam rumah atau gedung. Titik hubungannya dimulai dari Kotak Titik Bagi (KTB) sampai ke pesawat telepon.</p>
+        </ol>
+      
+      <h3><b>Jaringan Lokal Akses Fiber</b></h3>
+        <p>Selama ini fiber hanya dipakai untuk transmisi antar sentral, sebagai jaringan <i>backbone</i>, dan digunakan untuk komunikasi jarak jauh. Lalu mulai dikembangkanlah suatu jaringan lokal bahkan sampai ke terminal pelanggan dengan media fiber optik . Sistem transmisi fiber optik yang digunakan pada jaringan lokal tersebut dinamakan Jaringan Lokal Akses Fiber (Jarlokaf). Jarlokaf merupakan sebuah solusi strategis bagi jaringan akses pelanggan. Namun, ketepatan dalam segi perencanaan dan operasional, serta pemilihan arsitektur dan teknologi jaringan yang digunakan akan sangat mempengaruhi kesuksesan kegiatan operasi, perawatan, efektivitas investasi, serta kemudahan pengembangan jaringan dan layanan jasa. Ruang lingkup Jarlokaf berdasarkan lebar pita, dapat dibedakan menjadi dua macam yaitu <i>narrowband</i> dan <i>broadband</i>. <i>Narrowband</i>, dengan transmisi kurang dari 2 Mbps, mampu memberikan layanan voice (telepon). <i>Broadband</i>, dengan transmisi diatas 2 Mbps, dapat memberikan layanan yang lebih beragam seperti voice, data, dan citra, baik diam maupun bergerak.</p>
+      
+      <h4><b>Arsitektur Jaringan Fiber Optik Secara Umum</b></h4>
+          <p>Sistem Jarlokaf setidaknya memiliki 2 buah perangkat opto elektronik, yaitu satu perangkat opto elektronik di sisi sentral dan satu perangkat opto elektronik di sisi pelanggan. Lokasi perangkat opto elektronik di sisi pelanggan selanjutnya disebut Titik Konversi Optik (TKO). Secara praktis TKO berarti batas terakhir kabel optik ke arah pelanggan yang berfungsi sebagai lokasi konversi sinyal optik ke sinyal elektronik.</p>
+            <p><b><i>Fiber To The Building</i>(FTTB)</b><br> 
+              TKO terletak di dalam gedung dan biasanya terletak pada ruang telekomunikasi basement. Terminal pelanggan dihubungkan dengan TKO melalui kabel tembaga <i>indoor</i>. FTTB dapat dianalogikan dengan Daerah Catu Langsung (DCL) pada jaringan akses tembaga. Dapat diterapkan bagi pelanggan bisnis digedung bertingkat atau pelanggan di apartemen</p>
+              <figure align="center">
+                <img src="img24.png" alt="Fiber to the building">
+                <figcaption align="center">Gambar 5. Fiber to the building</figcaption>
+              </figure>
+      
+            <p><b><i>Fiber To The Zone</i> (FTTZ)</b><br> 
+              TKO terletak di suatu tempat di luar bangunan, baik di dalam kabinet maupun manhole. Terminal pelanggan dihubungkan dengan TKO melalui kabel tembaga hingga beberapa kilometer. FTTZ dapat dianalogikan sebagai pengganti RK. Diterapkan pada daerah perumahan yang letaknya jauh dari sentral atau infrastruktur duct pada arah yang bersangkutan sudah tidak memenuhi lagi untuk ditambah dengan kabel tembaga.</p>
+              <figure align="center">
+                <img src="img25.png" alt="Fiber to the zone">
+                <figcaption align="center">Gambar 6. Fiber to the zone</figcaption>
+              </figure>
+            <p><b><i>Fiber To The Curb </i>(FTTC)</b><br>
+              TKO terletak di suatu tempat di luar bangunan, baik di dalam kabinet, di atas tiang maupun manhole. Terminal pelanggan dihubungkan dengan TKO melalui kabel tembaga hingga beberapa ratus meter. FTTC dapat dianalogikan sebagai pengganti KP. FTTC dapat diterapkan bagi pelanggan bisnis yang letaknya terkumpul di suatu area terbatas namun tidak berbentuk gedung bertingkat atau bagi pelanggan perumahan yang pada waktu dekat akan menjadi pelanggan jasa hiburan</p>
+              <figure align="center">
+                <img src="img26.png" alt="Fiber to the Curb">
+                <figcaption align="center">Gambar 7. Fiber to the Curb</figcaption>
+              </figure>
+            <p><b><i>Fiber To The Home</i>(FTTH)</b><br>
+              TKO terletak di rumah pelanggan. Terminal pelanggan dihubungkan dengan TKO melalui kabel tembaga indoor atau IKR hingga beberapa puluh meter. FTTH dianalogikan sebagai pengganti TB (Terminal Batas)</p>
+              <figure align="center">
+                <img src="img27.png" alt="Fiber to the Home">
+                <figcaption align="center">Gambar 8. Fiber to the Home</figcaption>
+              </figure>
+
+      <h4><b>Teknologi Jaringan Fiber Optik</b></h4>
+      <p>Teknologi Jarlokaf adalah teknologi yang sedang berkembang sehingga berbagai metoda transmisi dimungkinkan untuk diterapkan dan relatif masih terbatas jumlah implementasinya dilapangan. Teknologi Jarlokaf yang saat ini sudah berkembang dangan baik antara lain: DLC (<i>Digital Loop Carrier</i>), PON (<i>Passive Optical Network</i>), dan AON (<i>Active Optical Network</i>) DLC, PON dan AON, merupakan teknologi jarlokaf dan dapat terintegrasi dengan <i>copper pair.</i></p>
+
+        <table border="1" cellpadding="5">
+          <tr>
+            <td>No</td>
+            <td>teknologi</td>
+            <td>Konfigurasi Dasar</td>
+            <td>Tipe Jenis Jasa</td>
+            <td>Keterangan</td>
+          </tr>
+          <tr>
+            <th rowspan="3">1</th>
+            <td>Digital Loop Carrier (DLC) </td>
+            <th rowspan="3">Point to Point</th>
+            <td>  </td>
+            <td>  </td>
+          </tr>
+          <tr>
+            <td>DLC Konvensional</td>
+            <td>IS-A</td>
+            <td>Banyak digunakan di dunia</td>
+          </tr>
+          <tr>
+            <td>Next Generation DLC </td>
+            <td>IS-A & IS-B</td>
+            <td>Relatif Baru</td>
+          </tr>
+          <tr>
+            <th rowspan="2">2</th>
+            <th rowspan="2">Passive Optical Network (PON)</th>
+            <td>Point to Multipoint</td>
+            <td>IS-A & IS-B</td>
+            <td>Mulai di dioperasikan secara komersil tahun 74</td>
+          </tr>
+          <tr>
+            <td>Pencabangan sinyal optik pasif</td>
+            <td>DS</td>
+            <td>Konfigurasi sama perangkat berbeda</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Active Optical Network (AON)</td>
+            <td>Point to multipoint melalui perangkat pencabangan aktif</td>
+            <td>IS-A & IS-B</td>
+            <td>Belum banyak digunakan</td>
+          </tr>
+        </table>
+      
+      <figure align="çenter">
+        <img src="img28.png" alt="Teknologi jarlokaf">
+        <figcaption align="center">Gambar 9. Teknologi jarlokaf</figcaption>
+      </figure>
+
+
+
+
+
+    </section>
+
+    <footer>
+      <a href="01.html" class="previous">&laquo; Previous</a>
+      <a href="02.html" class="next">Next &raquo;</a>
+  </footer>
+  </body>
+</html>
